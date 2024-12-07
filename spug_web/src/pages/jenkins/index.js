@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import {observer} from 'mobx-react';
 import { AuthDiv } from 'components';
+import store from './store';
 
-class JenkinsIndex extends React.Component {
-    render() {
+
+
+export default observer(function(){
+    useEffect(()=>{
+        store.fetchRecords()
+    }, [])
+
         return (
             <AuthDiv auth="dashboard.dashboard.view">
                 Jenkins Index
             </AuthDiv>
         )
-    }
-}
 
-export default JenkinsIndex
+})

@@ -30,10 +30,14 @@ export NODE_OPTIONS=--openssl-legacy-provider
 npm start 
 ```
 
-# 执行异常
+# 异常
 ```
 source venv/bin/activate
 python manage.py runmonitor
 python manage.py runscheduler
 python manage.py runworker
 ```
+
+# Links
+https://ops.spug.cc/docs/deploy-product
+
