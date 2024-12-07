@@ -41,6 +41,7 @@ import SystemSetting from './pages/system/setting';
 import SystemLogin from './pages/system/login';
 import WelcomeIndex from './pages/welcome/index';
 import WelcomeInfo from './pages/welcome/info';
+import JenkinsIndex from './pages/jenkins';
 
 export default [
   {icon: <DesktopOutlined/>, title: '工作台', path: '/home', component: HomeIndex},
@@ -51,6 +52,7 @@ export default [
     path: '/dashboard',
     component: DashboardIndex
   },
+  {icon: <CloudServerOutlined/>, title: 'Jenkins', auth: 'dashboard.dashboard.view', path: '/jenkins', component: JenkinsIndex},
   {icon: <CloudServerOutlined/>, title: '主机管理', auth: 'host.host.view', path: '/host', component: HostIndex},
   {
     icon: <CodeOutlined/>, title: '批量执行', auth: 'exec.task.do|exec.template.view', child: [

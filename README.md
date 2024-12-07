@@ -23,8 +23,10 @@ python manage.py runserver
 ## Frontend
 ```
 cd /data/spug/spug_web
-npm install --registry=https://registry.npm.taobao.org
+export NODE_OPTIONS=--dns-result-order=ipv4first
+npm install --registry=http://registry.npmmirror.com
 
+export NODE_OPTIONS=--openssl-legacy-provider
 npm start 
 ```
 
