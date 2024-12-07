@@ -13,10 +13,11 @@ export default function () {
   return (
     <Layout.Footer style={{padding: 0}}>
       <div className={styles.footer}>
+        {/* 
         <div className={styles.links}>
-          <a className={styles.item} title="官网" href="https://spug.cc" target="_blank"
-             rel="noopener noreferrer">官网</a>
-          <a className={styles.item} title="Github" href="https://github.com/openspug/spug" target="_blank"
+          <a className={styles.item} title="链接A" href="#" target="_blank"
+             rel="noopener noreferrer">链接A</a>
+          <a className={styles.item} title="AA" href="#" target="_blank"
              rel="noopener noreferrer"><GithubOutlined/></a>
           <a title="文档" href="https://ops.spug.cc/docs/about-spug/" target="_blank"
              rel="noopener noreferrer">文档</a>
@@ -24,6 +25,7 @@ export default function () {
         <div style={{color: 'rgba(0, 0, 0, .45)'}}>
           Copyright <CopyrightOutlined/> {new Date().getFullYear()} By OpenSpug
         </div>
+         */}
       </div>
     </Layout.Footer>
   )

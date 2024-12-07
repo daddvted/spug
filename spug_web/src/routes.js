@@ -59,13 +59,13 @@ export default [
       {title: '文件分发', auth: 'exec.transfer.do', path: '/exec/transfer', component: ExecTransfer},
     ]
   },
-  {
-    icon: <FlagOutlined/>, title: '应用发布', auth: 'deploy.app.view|deploy.repository.view|deploy.request.view', child: [
-      {title: '发布配置', auth: 'deploy.app.view', path: '/deploy/app', component: DeployApp},
-      {title: '构建仓库', auth: 'deploy.repository.view', path: '/deploy/repository', component: DeployRepository},
-      {title: '发布申请', auth: 'deploy.request.view', path: '/deploy/request', component: DeployRequest},
-    ]
-  },
+  //{
+  //  icon: <FlagOutlined/>, title: '应用发布', auth: 'deploy.app.view|deploy.repository.view|deploy.request.view', child: [
+  //    {title: '发布配置', auth: 'deploy.app.view', path: '/deploy/app', component: DeployApp},
+  //    {title: '构建仓库', auth: 'deploy.repository.view', path: '/deploy/repository', component: DeployRepository},
+  //    {title: '发布申请', auth: 'deploy.request.view', path: '/deploy/request', component: DeployRequest},
+  //  ]
+  //},
   {
     icon: <ScheduleOutlined/>,
     title: '任务计划',
@@ -73,15 +73,15 @@ export default [
     path: '/schedule',
     component: ScheduleIndex
   },
-  {
-    icon: <DeploymentUnitOutlined/>, title: '配置中心', auth: 'config.env.view|config.src.view|config.app.view', child: [
-      {title: '环境管理', auth: 'config.env.view', path: '/config/environment', component: ConfigEnvironment},
-      {title: '服务配置', auth: 'config.src.view', path: '/config/service', component: ConfigService},
-      {title: '应用配置', auth: 'config.app.view', path: '/config/app', component: ConfigApp},
-      {path: '/config/setting/:type/:id', component: ConfigSetting},
-    ]
-  },
-  {icon: <MonitorOutlined/>, title: '监控中心', auth: 'monitor.monitor.view', path: '/monitor', component: MonitorIndex},
+  //{
+  //  icon: <DeploymentUnitOutlined/>, title: '配置中心', auth: 'config.env.view|config.src.view|config.app.view', child: [
+  //    {title: '环境管理', auth: 'config.env.view', path: '/config/environment', component: ConfigEnvironment},
+  //    {title: '服务配置', auth: 'config.src.view', path: '/config/service', component: ConfigService},
+  //    {title: '应用配置', auth: 'config.app.view', path: '/config/app', component: ConfigApp},
+  //    {path: '/config/setting/:type/:id', component: ConfigSetting},
+  //  ]
+  //},
+  //{icon: <MonitorOutlined/>, title: '监控中心', auth: 'monitor.monitor.view', path: '/monitor', component: MonitorIndex},
   {
     icon: <AlertOutlined/>, title: '报警中心', auth: 'alarm.alarm.view|alarm.contact.view|alarm.group.view', child: [
       {title: '报警历史', auth: 'alarm.alarm.view', path: '/alarm/alarm', component: AlarmIndex},

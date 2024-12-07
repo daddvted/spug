@@ -98,7 +98,7 @@ export default function () {
     <div className={styles.container}>
       <div className={styles.titleContainer}>
         <div><img className={styles.logo} src={logo} alt="logo"/></div>
-        <div className={styles.desc}>灵活、强大、易用的开源运维平台</div>
+        <div className={styles.desc}>hehe</div>
       </div>
       <div className={styles.formContainer}>
         <Tabs activeKey={loginType} className={styles.tabs} onTabClick={v => setLoginType(v)}>
@@ -151,6 +151,7 @@ export default function () {
       </div>
 
       <div className={styles.footerZone}>
+        {/*
         <div className={styles.linksZone}>
           <a className={styles.links} title="官网" href="https://spug.cc" target="_blank"
              rel="noopener noreferrer">官网</a>
@@ -160,6 +161,7 @@ export default function () {
              rel="noopener noreferrer">文档</a>
         </div>
         <div style={{color: 'rgba(0, 0, 0, .45)'}}>Copyright <CopyrightOutlined/> {new Date().getFullYear()} By OpenSpug</div>
+        */}
       </div>
     </div>
   )
