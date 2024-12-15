@@ -52,7 +52,7 @@ export default [
     path: '/dashboard',
     component: DashboardIndex
   },
-  {icon: <CloudServerOutlined/>, title: 'Jenkins', auth: 'dashboard.dashboard.view', path: '/jenkins', component: JenkinsIndex},
+  {icon: <CloudServerOutlined/>, title: 'Jenkins', auth: 'jenkins.jenkins.view', path: '/jenkins', component: JenkinsIndex},
   {icon: <CloudServerOutlined/>, title: '主机管理', auth: 'host.host.view', path: '/host', component: HostIndex},
   {
     icon: <CodeOutlined/>, title: '批量执行', auth: 'exec.task.do|exec.template.view', child: [
