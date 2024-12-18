@@ -17,6 +17,7 @@ import execStore from 'pages/exec/task/store';
 import hostStore from 'pages/host/store';
 
 export default function () {
+  const spugVersion = process.env.SPUG_VERSION ?? (process.env.SPUG_VERSION = "dev");
   const [form] = Form.useForm();
   const [counter, setCounter] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -160,8 +161,8 @@ export default function () {
           <a title="文档" href="https://ops.spug.cc/docs/about-spug/" target="_blank"
              rel="noopener noreferrer">文档</a>
         </div>
-        <div style={{color: 'rgba(0, 0, 0, .45)'}}>Copyright <CopyrightOutlined/> {new Date().getFullYear()} By OpenSpug</div>
         */}
+        <div style={{color: 'rgba(0, 0, 0, .45)'}}>Version: {spugVersion}</div>
       </div>
     </div>
   )
