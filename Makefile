@@ -19,14 +19,17 @@ SHELL := /bin/bash -o pipefail
 UNAME ?= $(shell uname)
 YARN_EXEC ?= $(shell which yarn)
 GO_EXEC ?= $(shell which go)
+DT ?= $(shell date +"%Y%m%d-%H%M")
 
 
 VER ?= $(shell git describe --tags --dirty --always)
+# VER ?= $(shell git describe --tags --dirty)
 ifeq ($(VER),)
 	VER = $(shell date +"%Y%m%d-%H%M")
 endif
 TAG = "$(VER)"
 
 quick: 
-	cd ./spug_web && export NODE_OPTIONS=--openssl-legacy-provider  && SPUG_VERSION=${TAG} npm run build
-	docker build --no-cache -t 192.168.6.99/devops/spug:${TAG} .
+	@echo ${TAG}
+#	cd ./spug_web && export NODE_OPTIONS=--openssl-legacy-provider  && SPUG_VERSION=${TAG} npm run build
+#	docker build --no-cache -t 192.168.6.99/devops/spug:${TAG} .

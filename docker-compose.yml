@@ -13,7 +13,7 @@ services:
   #    - MYSQL_PASSWORD=spug.cc
   #    - MYSQL_ROOT_PASSWORD=spug.cc
   spug:
-    image: 192.168.6.99/devops/spug:20241216
+    image: 192.168.6.99/devops/spug:e07ec74
     container_name: spug
     privileged: true
     restart: always
